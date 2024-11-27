@@ -1,0 +1,509 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 113060742247612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 199131054255439
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto8",
+					"sid": 556152116558983,
+					"parameters": {
+						"text": "Aciertos"
+					}
+				}
+			],
+			"sid": 551174348161233
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto",
+					"sid": 240547146072981,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 617523071255360
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite6",
+					"sid": 510515170968505,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 877288395872207,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto",
+					"sid": 257283797845742,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 968700318829453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 475850251583453,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 771080636327963
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite3",
+					"sid": 294196973476761,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 935984173455419,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 425664346651111,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 398130209154133
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 483818243148278,
+					"parameters": {
+						"text": "\"CPU Cooler\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 528719613698305
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite4",
+					"sid": 732080250579974,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 240754552661020,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 934302849521125,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 276596028324482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 568858281866281,
+					"parameters": {
+						"text": "\"GPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 709324881395186
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite5",
+					"sid": 939440410608936,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 411530073010408,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 882970363591605,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 239811613890054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 808409165331149,
+					"parameters": {
+						"text": "\"psu\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 913635614183169
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite7",
+					"sid": 976597737811903,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 472168674836095,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 121765880615098,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 941884264685711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 240401551772336,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 881648661261681
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite8",
+					"sid": 524205984446175,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 466287620340144,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 815258021111886,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 310663832905992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Sprite6",
+					"sid": 901399330448293,
+					"parameters": {
+						"object": "Comprobador_PlacaBase",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite6",
+					"sid": 827413185167431,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite2",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 539435221683038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Sprite7",
+					"sid": 424602637371610,
+					"parameters": {
+						"object": "Comprobador_psu",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite7",
+					"sid": 221741425685550,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite2",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 352293724708499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite3",
+					"sid": 290431911629812,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite3",
+					"sid": 987078571711996,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite2",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 184743841940369
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite4",
+					"sid": 466679602733745,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite4",
+					"sid": 967565097381771,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite6",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 791172735631863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite5",
+					"sid": 466512788697930,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite5",
+					"sid": 343697623056514,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite6",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 498086048786628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite8",
+					"sid": 680388959774297,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Sprite8",
+					"sid": 984520272197005,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite6",
+						"image-point": "3",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 611740792093080
+		}
+	],
+	"sid": 633549871558835
+}
