@@ -15,6 +15,247 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 199463959010940,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Texto9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 933872669122091,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto9",
+					"sid": 831917530897021,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto10",
+					"sid": 766105649090498,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto11",
+					"sid": 741292645228207,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto",
+					"sid": 484021061115454,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 620399821420159,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 860488816258726,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 834563925538654,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 152431767547360,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 277154542075708,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 967374800634672
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 163794841816753,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Texto11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite9",
+					"sid": 164389015249426,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto12",
+					"sid": 258065041724704,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto13",
+					"sid": 874907382262471,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto9",
+					"sid": 457352077078987,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto10",
+					"sid": 892003062839026,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto11",
+					"sid": 677304470860966,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 950725436734469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 124671007147734
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto",
+					"sid": 934566569730489,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 956896116731424,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 224638222254241,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 871463684941829,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 661112608343134,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 536732565043792,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto12",
+					"sid": 422864229246845,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto13",
+					"sid": 417700475638303,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 378633657441707
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 199131054255439

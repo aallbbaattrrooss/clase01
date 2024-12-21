@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 41600,
+	"savedWithRelease": 41602,
 	"name": "Clase_infor",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -82,7 +82,15 @@
 			"Texto7",
 			"Texto8",
 			"Comprobador_PlacaBase",
-			"Comprobador_psu"
+			"Comprobador_psu",
+			"Sprite",
+			"Texto9",
+			"Texto10",
+			"Texto11",
+			"Sprite9",
+			"Texto12",
+			"EntradaDeTexto7",
+			"Texto13"
 		],
 		"subfolders": []
 	},
