@@ -49,6 +49,20 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "vignette",
 			"name": "Viñeta",
@@ -89,8 +103,12 @@
 			"Texto11",
 			"Sprite9",
 			"Texto12",
-			"EntradaDeTexto7",
-			"Texto13"
+			"Texto13",
+			"Sprite10",
+			"Sprite11",
+			"Sprite12",
+			"Sprite13",
+			"Texto14"
 		],
 		"subfolders": []
 	},
