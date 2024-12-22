@@ -126,10 +126,10 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite9",
-					"sid": 164389015249426,
+					"objectClass": "Sprite",
+					"sid": 950488118044446,
 					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				},
 				{
@@ -144,6 +144,14 @@
 					"id": "set-visible",
 					"objectClass": "Texto13",
 					"sid": 874907382262471,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto14",
+					"sid": 312840048216975,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -167,7 +175,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "Texto11",
-					"sid": 677304470860966,
+					"sid": 936069845359952,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -245,6 +253,14 @@
 					"id": "set-visible",
 					"objectClass": "Texto13",
 					"sid": 417700475638303,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto14",
+					"sid": 687774439042558,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -744,6 +760,457 @@
 				}
 			],
 			"sid": 611740792093080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-moved",
+					"objectClass": "Sprite13",
+					"sid": 468985332860094,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite13",
+					"sid": 804666811035110,
+					"parameters": {
+						"animation": "\"andar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 330475623149796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "Sprite13",
+					"sid": 621991251471243,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite13",
+					"sid": 942230265061683,
+					"parameters": {
+						"animation": "\"saltar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 601741802372062
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "Sprite13",
+					"sid": 813177285446258,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite13",
+					"sid": 856687750119338,
+					"parameters": {
+						"animation": "\"quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 852993865525644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 288166232855149,
+					"parameters": {
+						"first-value": "Sprite13.Plataforma.VectorX",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Sprite13",
+					"sid": 876510028607756,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				}
+			],
+			"sid": 606200732981599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 130272785227624,
+					"parameters": {
+						"first-value": "Sprite13.Plataforma.VectorX",
+						"comparison": 2,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "Sprite13",
+					"sid": 466829141229558,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 935285333617256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 114549147683926,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 163008857688705,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto12",
+					"sid": 934558589516203,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto13",
+					"sid": 956048680018696,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto14",
+					"sid": 309862232230231,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto",
+					"sid": 178838849199734,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 294956157840395,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 112448976505572,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 397364015932302,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 519536818119262,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 310319246183969,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 490654501623565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 301343306448498,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 297600935658820,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto4",
+					"sid": 229359228953084,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 974190280585659
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 193228356313838,
+					"parameters": {
+						"object": "Sprite4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 302650338266599,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto5",
+					"sid": 785505168050649,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 434745478804928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 715445810933418,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 964779514082011,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto6",
+					"sid": 227906834869386,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 699610861383490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 608157259876804,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto",
+					"sid": 759445845944828,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto",
+					"sid": 750954837079359,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 622648586058121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 305331293092724,
+					"parameters": {
+						"object": "Sprite7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 475412761887359,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto2",
+					"sid": 981117561962850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 392313701945380
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite13",
+					"sid": 735047617595758,
+					"parameters": {
+						"object": "Sprite8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 703999888609491,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto3",
+					"sid": 335342672653957,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 391307082826585
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 169552362179119,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Texto14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 401124625249274,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto12",
+					"sid": 782173186850150,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto14",
+					"sid": 158566218953878,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 636804336781356
 		}
 	],
 	"sid": 633549871558835
